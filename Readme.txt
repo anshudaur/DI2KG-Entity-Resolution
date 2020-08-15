@@ -22,7 +22,7 @@ e) Rules for extracting the models\nf) Cleaning of false-positive model names.
 
 We consider the hard-coded rules to deter from our generality. However, we include them since they are crucial for finding a straight-forward solution with the limited resources chosen.
 
-One of the steps : Pairwise BERT embedding were generated and KNN classifier was trained on cosine similarity to find similar entities
+One of the steps : Pairwise BERT embedding were generated and KNN classifier was trained on cosine similarity to find similar entities (similiarityUsingBert.ipynb file)
 
 To the best of our knowledge, any recent version of scikit-learn and numpy would be compatible with our submitted solution.
 
