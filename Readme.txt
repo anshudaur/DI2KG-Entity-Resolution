@@ -42,6 +42,3 @@ For reference, we installed it with the following
     threadpoolctl-2.1.0        |     pyh5ca1d4c_0          15 KB  conda-forge
 
 To run: python EntityResolution.py 
-
-
-For comments, concerns, or issues, feel free to reach out to us: campero@ovgu.de, david.broneske@ovgu.de
