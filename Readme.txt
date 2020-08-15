@@ -1,15 +1,6 @@
 A proposed solution to the Entity Resultion Category of the 2nd DI2KG Workshop Challenge (Monitor Data, Domain knowledge approach)
 Team: SimSkipReloaded
 
-Authors:
-Gabriel Campero Durand (campero@ovgu.de)
-Anshu Daur (anshu.daur@gmail.com,anshu1@st.ovgu.de)
-Chinmaya Hegde (chinmaya.hegde@st.ovgu.de)
-Prafulla Diwesh (prafulla.diwesh@st.ovgu.de)
-Shivalika Suman (shivalika.suman@st.ovgu.de)
-Vinayak Kumar (vinayak.kumar@ovgu.de)
-David Broneske (david.broneske@ovgu.de)
-
 Affiliation: University of Magdeburg, Databases and Software Engineering Workgroup.
 
 
