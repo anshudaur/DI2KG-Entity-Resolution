@@ -3,7 +3,7 @@ Team: SimSkipReloaded
 
 Affiliation: University of Magdeburg, Databases and Software Engineering Workgroup.
 
-
+For overview of the problem and  dataset , refer : http://di2kg.inf.uniroma3.it/2020/#challenge
 Comments:
 A solution highly tailored to the domain, with the core strategies of: information propagation for model detection, carefully-tuned brand and model extraction (with domain-specific choices). 
 
