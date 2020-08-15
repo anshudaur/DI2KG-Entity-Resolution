@@ -1,4 +1,5 @@
-A proposed solution to the Entity Resultion Category of the 2nd DI2KG Workshop Challenge (Monitor Data, Domain knowledge approach)
+A proposed solution to the Entity Resolution - Domain Knowledge Category of the 2nd International Workshop on Challenges and Experiences from Data Integration to Knowledge Graphs (Monitor Data, Domain knowledge approach)
+
 Team: SimSkipReloaded
 
 Affiliation: University of Magdeburg, Databases and Software Engineering Workgroup.
