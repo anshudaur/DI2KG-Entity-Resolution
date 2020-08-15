@@ -34,10 +34,21 @@ def get_dic_key(val, dic):
 """
 Step 1: TF-IDF vectorization and collecting of the explicit brands
 """
-print("A solution highly tailored to the domain, with the core strategies of: information propagation for model detection, carefully-tuned brand and model extraction (with domain-specific choices). All in all it could take around 15 minutes to run this, depending on the machine.")
+print("A solution highly tailored to the domain, with the core strategies of: information propagation for model detection,\ 
+      carefully-tuned brand and model extraction (with domain-specific choices).\
+      All in all it could take around 15 minutes to run this, depending on the machine.")
+
 print("************************************")
 print("Program assumptions (other than requirements):\n 1) We assume 2013_monitor_specs to be in the same path.\n")
-print("The domain-specific choices we made are limited to: \na) cleaning of site-specific texts for better TF-IDF results, \nb) non-exhaustive brand (attribute) keywords, extracted by looking at some examples of the data \nc) brand names that were extracted with a bit of a human-in-the-loop process (where we saw the brand names emerging and collected alternative names),\nd) a large amount of rules for brand cleaning, resulting from data understanding (this is the less general aspect of our solution)... the amount of hand-crafted configurations really show the amount of time the team spent exploring and understanding the data, \ne) Rules for extracting the models\nf) Cleaning of false-positive model names.\nWe consider the hard-coded rules to deter from our generality. However, we include them since they are crucial for finding a straight-forward solution with the limited resources chosen.\n\n")
+
+print("The domain-specific choices we made are limited to: \na) cleaning of site-specific texts for better TF-IDF results, \
+\nb) non-exhaustive brand (attribute) keywords, extracted by looking at some examples of the data \n \
+c) brand names that were extracted with a bit of a human-in-the-loop process \
+(where we saw the brand names emerging and collected alternative names),\n \
+d) a large amount of rules for brand cleaning, resulting from data understanding (this is the less general aspect of our solution)... \
+the amount of hand-crafted configurations really show the amount of time the team spent exploring and understanding the data, \n \
+e) Rules for extracting the models\nf) Cleaning of false-positive model names.\nWe consider the hard-coded rules to deter from our generality. \
+However, we include them since they are crucial for finding a straight-forward solution with the limited resources chosen.\n\n")
 
 
 print("Phase 1: Collecting of the explicit brands. (One minute or so)")
@@ -73,7 +84,8 @@ brand_list=['viewSonic','lenovo','dell','hp','lg','formac','iiyama','planar',
            'rose rackview','atronic','brasscraft','vibrant','aview','skyport','au optronics','matchless',
            'harsper','ilyama','tomy digital','prodisplay','evov','tecklink','skytec','bt pathway',
            'imm living inc.','e yama','vector','contec08d','amstyle','chatsworth','sensormatic','hannsg','v7', 
-           'Roline','hanns.g','apc','alpha touch','xo vision','gvision','mcm',"chasis plans",'arbor',"faytech", "chassis plans","chunghwa"] #Domain knowledge and dataset-specific.
+           'Roline','hanns.g','apc','alpha touch','xo vision','gvision','mcm',"chasis plans",'arbor',"faytech", "chassis plans","chunghwa"] 
+#Domain knowledge and dataset-specific.
 brand_list=list(set([_.lower() for _ in brand_list]))
 not_brands=['mp3car', 'tft', 'mixed', 'core', 'r&m', 'x-10', 'business','rx', 'skilcraft','nds','pro','vesa','pct2265 22 inch black hid bezel multi-touch lcd usb vga hdmi dvi-d','pxl2430mw','vision','pl1711m', 'acbel','kenwood','krk','l@@k','lindam clarity','lipo','mamba']
 rule_dic = {'contec':['contec08d','contec'],'dell':['dell','ultrasharp','optiplex','wyse'],'hp':['hewlett-packard','hewlett packard','hhewlett','zr22w','hp'],'nec':['nec'],
@@ -265,7 +277,9 @@ to_delete_files=set()
 to_delete_files_rules=set()
 reasons_to_delete=dict()
 item_to_id = dict()
-stopwords=["17","15","display","product","led","17'","15'","21","23","24","3m","22","17","21.5","22","ve","20","allen-bradley","cd/mâ²", "color","professional","details","ultrasharp","27","3d","cinema","wide","x series","ultrasharp","19","920","ds-","new","cd/m2","1u","ohc24","2711p", "715l1009", "pe1229", "17''","e114849"]
+stopwords=["17","15","display","product","led","17'","15'","21","23","24","3m","22","17","21.5","22","ve","20","allen-bradley","cd/mâ²", "color",\
+           "professional","details","ultrasharp","27","3d","cinema","wide","x series","ultrasharp","19","920","ds-","new","cd/m2","1u","ohc24","2711p",
+           "715l1009", "pe1229", "17''","e114849"]
 
 for i in brand_dict:
     if brand_dict[i] in to_delete:
