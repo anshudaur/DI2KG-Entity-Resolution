@@ -28,6 +28,7 @@ One of the steps : Pairwise BERT embedding were generated and KNN classifier was
 To the best of our knowledge, any recent version of scikit-learn and numpy would be compatible with our submitted solution.
 
 For reference, we installed it with the following
+
     ca-certificates-2020.6.20  |       hecda079_0         145 KB  conda-forge
     certifi-2020.6.20          |   py38h32f6830_0         151 KB  conda-forge
     joblib-0.16.0              |             py_0         203 KB  conda-forge
